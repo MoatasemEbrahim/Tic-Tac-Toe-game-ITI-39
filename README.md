@@ -2,11 +2,11 @@
 Tic-Tac-Toe-game build with Java as course project in ITI intake 39 ( Nasr City )
 
 Group Members:
--Norhan Sherief -> ( motasemebrahim.m@gmail.com )
--Moatasem Ebrahim -> ( nourhansherief@yahoo.com )
--Mahmoud Elgohary -> ( Mfelfel95@gmail.com )
--Eslam Salah -> ( Islamsalah830@gmail.com )
--Mayar AbdElsalam -> ( mayarabdelsalam1996@gmail.com )
+-Norhan Sherief -> ( motasemebrahim.m@gmail.com ).
+-Moatasem Ebrahim -> ( nourhansherief@yahoo.com ).
+-Mahmoud Elgohary -> ( Mfelfel95@gmail.com ).
+-Eslam Salah -> ( Islamsalah830@gmail.com ).
+-Mayar AbdElsalam -> ( mayarabdelsalam1996@gmail.com ).
 
 
 If you want to run the game you should follow the next instructions:
