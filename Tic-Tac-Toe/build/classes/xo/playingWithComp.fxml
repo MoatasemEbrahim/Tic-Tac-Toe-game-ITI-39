@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="700.0" style=" -fx-background-image:url('file:src/XO/xo.jpg'); -fx-background-size: 100% 100%; " xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="xo.PlayingWithCompController">
+  <children>
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ccedff" height="220.5" layoutX="224.0" layoutY="130.0" stroke="BLACK" strokeType="INSIDE" width="230.5" />
+    <Line endX="120.0" endY="0.0" layoutX="334.0" layoutY="202.0" startX="-110.0" />
+    <Line endX="120.0" endY="0.0" layoutX="334.0" layoutY="277.0" startX="-110.0" />
+    <Line endX="-65.0" endY="50.0" layoutX="367.0" layoutY="300.0" startX="-65.0" startY="-170.0" />
+    <Line endX="-65.0" endY="50.0" layoutX="443.0" layoutY="300.0" startX="-65.0" startY="-170.0" />
+    <ImageView id="topLeft" fx:id="topleft" fitHeight="60.0" fitWidth="60.0" layoutX="235.0" layoutY="135.0" onMouseClicked="#drawTopLeft" pickOnBounds="true" preserveRatio="true" />
+    <ImageView id="topmiddle" fx:id="topcenter" fitHeight="60.0" fitWidth="60.0" layoutX="310.0" layoutY="135.0" onMouseClicked="#drawTopCenter" pickOnBounds="true" preserveRatio="true" />
+    <ImageView fx:id="topright" fitHeight="60.0" fitWidth="60.0" layoutX="384.0" layoutY="135.0" onMouseClicked="#drawTopRight" pickOnBounds="true" preserveRatio="true" />
+    <ImageView id="middleleft" fx:id="centerleft" fitHeight="60.0" fitWidth="60.0" layoutX="237.0" layoutY="210.0" onMouseClicked="#drawCenterLeft" pickOnBounds="true" preserveRatio="true" />
+    <ImageView id="middlemiddle" fx:id="centercenter" fitHeight="60.0" fitWidth="60.0" layoutX="310.0" layoutY="210.0" onMouseClicked="#drawCenterCenter" pickOnBounds="true" preserveRatio="true" />
+    <ImageView id="mi" fx:id="centerright" fitHeight="60.0" fitWidth="60.0" layoutX="385.0" layoutY="210.0" onMouseClicked="#drawCenterRight" pickOnBounds="true" preserveRatio="true" />
+    <ImageView fx:id="bottomleft" fitHeight="60.0" fitWidth="60.0" layoutX="236.0" layoutY="283.0" onMouseClicked="#drawBottomLeft" pickOnBounds="true" preserveRatio="true" />
+    <ImageView fx:id="bottomcenter" fitHeight="60.0" fitWidth="60.0" layoutX="310.0" layoutY="283.0" onMouseClicked="#drawBottomCenter" pickOnBounds="true" preserveRatio="true" />
+    <ImageView fx:id="bottomright" fitHeight="60.0" fitWidth="60.0" layoutX="385.0" layoutY="283.0" onMouseClicked="#drawBottomRight" pickOnBounds="true" preserveRatio="true" />
+    <!--    <ComboBox fx:id="onlinePlayer" blendMode="EXCLUSION" cache="false" layoutX="306.0" layoutY="61.0" prefHeight="21.0" prefWidth="163.0" promptText="">
+      <items>
+        <FXCollections fx:factory="observableArrayList" />
+      </items>
+    </ComboBox>
+    <Label layoutX="325.0" layoutY="32.0" text="Online Players">
+      <font>
+        <Font size="20.0" />
+      </font>
+    </Label>-->
+    <Button alignment="CENTER" blendMode="DIFFERENCE" cancelButton="false" defaultButton="true" layoutX="40.0" layoutY="441.0" mnemonicParsing="false" onAction="#back" text="Back" textOverrun="WORD_ELLIPSIS" underline="false">
+      <font>
+        <Font name="System Bold" size="14.0" fx:id="x1" />
+      </font>
+    </Button>
+    <!--    <ComboBox fx:id="onlinePlayer" blendMode="EXCLUSION" cache="false" layoutX="306.0" layoutY="61.0" prefHeight="21.0" prefWidth="163.0" promptText="">
+      <items>
+        <FXCollections fx:factory="observableArrayList" />
+      </items>
+    </ComboBox>
+    <Label layoutX="325.0" layoutY="32.0" text="Online Players">
+      <font>
+        <Font size="20.0" />
+      </font>
+    </Label>-->
+    <Button alignment="CENTER" blendMode="DIFFERENCE" cancelButton="false" defaultButton="true" font="$x1" layoutX="560.0" layoutY="441.0" mnemonicParsing="false" onAction="#signOut" text="SignOut" textOverrun="WORD_ELLIPSIS" underline="false" />
+  </children>
+</AnchorPane>

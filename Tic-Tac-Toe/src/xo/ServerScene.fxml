@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="300.0" prefWidth="500.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="xo.ServerSceneController">
+  <children>
+    <Label layoutX="35.0" layoutY="33.0" text="Server status:">
+      <font>
+        <Font size="28.0" />
+      </font>
+    </Label>
+    <RadioButton id="mm" fx:id="onBtn" layoutX="37.0" layoutY="87.0" mnemonicParsing="false" onAction="#onBtnAction" selected="true" text="On">
+      <font>
+        <Font size="24.0" fx:id="x1" />
+      </font>
+      <toggleGroup>
+        <ToggleGroup fx:id="status" />
+      </toggleGroup>
+    </RadioButton>
+    <RadioButton id="mm" fx:id="offBtn" font="$x1" layoutX="178.0" layoutY="87.0" mnemonicParsing="false" onAction="#offBtnAction" text="Off" toggleGroup="$status" />
+    <ComboBox fx:id="players" disable="false" editable="false" focusTraversable="true" layoutX="35.0" layoutY="150.0" prefHeight="32.0" prefWidth="164.0" promptText="Players" visible="true">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Item 1" />
+          <String fx:value="Item 2" />
+          <String fx:value="Item 3" />
+        </FXCollections>
+      </items>
+    </ComboBox>
+  </children>
+</AnchorPane>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="700.0" style=" -fx-background-image:url('file:src/XO/xo.jpg'); -fx-background-size: 100% 100%; " xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="xo.LoginSceneController">
+  <children>
+    <Label layoutX="97.0" layoutY="51.0" text="Username">
+      <font>
+        <Font size="18.0" fx:id="x1" />
+      </font>
+    </Label>
+    <Label font="$x1" layoutX="97.0" layoutY="134.0" text="Password" />
+    <Button id="LoginSubmit" layoutX="97.0" layoutY="210.0" minHeight="40.0" minWidth="110.0" mnemonicParsing="false" onAction="#moveToMenuScene" prefHeight="40.0" prefWidth="110.0" text="Log in">
+      <font>
+        <Font name="System Bold" size="16.0" />
+      </font>
+      <textFill>
+        <Color blue="0.400" green="0.160" red="0.000" fx:id="x2" />
+      </textFill>
+    </Button>
+    <Button font="$x1" layoutX="30.0" layoutY="430.0" mnemonicParsing="false" onAction="#moveToHomeScene" text="Back" textFill="$x2" />
+    <TextField id="userNameInput" fx:id="loginUserNameInput" layoutX="97.0" layoutY="85.0" prefWidth="200.0" />
+    <TextField id="PasswordInput" fx:id="loginPasswordInput" layoutX="97.0" layoutY="166.0" prefWidth="200.0" />
+  </children>
+</AnchorPane>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.web.*?>
+
+<AnchorPane id="AnchorPane" minHeight="500.0" minWidth="700.0" prefHeight="500.0" prefWidth="700.0" style=" -fx-background-image:url('file:src/XO/xo.jpg'); -fx-background-size: 100% 100%; " xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="xo.HomeSceneController">
+  <children>
+    <Label layoutX="273.0" layoutY="103.0" text="Welcome To">
+      <font>
+        <Font size="28.0" />
+      </font>
+    </Label>
+    <Label layoutX="171.0" layoutY="141.0" text="Tic Tac Toe game">
+      <font>
+        <Font name="System Bold" size="44.0" />
+      </font>
+    </Label>
+    <Button id="LoginBtn" layoutX="220.0" layoutY="227.0" mnemonicParsing="false" onAction="#moveToLoginScene" prefHeight="38.0" prefWidth="261.0" text="Log in">
+      <font>
+        <Font size="18.0" fx:id="x1" />
+      </font>
+    </Button>
+    <Button id="RegisterBtn" font="$x1" layoutX="220.0" layoutY="287.0" mnemonicParsing="false" onAction="#moveToRegisterScene" prefHeight="38.0" prefWidth="261.0" text="Register" />
+  </children>
+</AnchorPane>
